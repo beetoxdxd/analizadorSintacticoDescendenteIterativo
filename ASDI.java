@@ -110,7 +110,7 @@ public class ASDI implements Parser {
                     if(preanalisis.tipo == TipoToken.PUNTO){
                         pila.pop();
                         pila.push(TipoToken.IDENTIFICADOR);
-                        pila.push(TipoToken.COMA);
+                        pila.push(TipoToken.PUNTO);
                     } else if(preanalisis.tipo == TipoToken.COMA || preanalisis.tipo == TipoToken.FROM){
                         pila.pop();
                     } else {
@@ -170,7 +170,7 @@ public class ASDI implements Parser {
         }
         else{
             hayErrores = true;
-            System.out.println("Error encontrado no se pq");
+            System.out.println("ERROR IDENTIFICADO: Se esperaba " + tt);
         }
 
     }
