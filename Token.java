@@ -31,6 +31,6 @@ public class Token {
     }
 
     public String toString(){
-        return "<" + tipo + " " + lexema + " " + posicion + ">";
+        return "<" + tipo + " " + lexema + ">";
     }
 }
